@@ -41,7 +41,6 @@ public class AppActivity extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_app);
 
-        // load Application
         packageManager = getPackageManager();
         new LoadApplications().execute();
 
@@ -72,7 +71,6 @@ public class AppActivity extends Activity implements View.OnClickListener {
             filter.filter(s);
         }
     };
-
 
     private List checkForLaunchIntent(List<ApplicationInfo> list) {
 
@@ -132,7 +130,7 @@ public class AppActivity extends Activity implements View.OnClickListener {
 
         @Override
         protected void onPreExecute() {
-            progress = ProgressDialog.show(AppActivity.this, null, "Loading apps info...");
+            progress = ProgressDialog.show(AppActivity.this, null, "Info");
             super.onPreExecute();
         }
     }
