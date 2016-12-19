@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HomeWork2</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_text">Data</string>
+    <string name="column_count">3</string>
+    <string name="row_count">4</string>
+    <string name="button_weight">1</string>
+    <string name="app_button_name">APP</string>
+</resources>

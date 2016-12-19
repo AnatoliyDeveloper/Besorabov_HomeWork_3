@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:id="@+id/GridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:background="@android:color/darker_gray">
+
+        <Button
+            style="@style/DataButton"
+            android:text="@string/button_text"/>
+
+        <Button
+            style="@style/DataButton"
+            android:text="@string/button_text"/>
+
+        <Button
+            style="@style/DataButton"
+            android:text="@string/button_text"/>
+
+        <Button
+            style="@style/DataButton"
+            android:text="@string/button_text"/>
+
+        <Button
+            style="@style/DataButton"
+            android:text="@string/button_text"/>
+
+        <Button
+            style="@style/DataButton"
+            android:text="@string/button_text"/>
+
+        <Button
+            style="@style/DataButton"
+            android:text="@string/button_text"/>
+
+        <Button
+            style="@style/DataButton"
+            android:text="@string/button_text"/>
+
+        <Button
+            style="@style/DataButton"
+            android:text="@string/button_text"/>
+
+        <Button
+            style="@style/DataButton"
+            android:text="@string/button_text"/>
+
+        <Button
+            style="@style/DataButton"
+            android:text="@string/button_text"/>
+
+        <Button
+            style="@style/DataButton"
+            android:text="@string/button_text"/>
+
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/call_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="@string/button_weight"
+            android:src="@android:drawable/ic_menu_call"/>
+
+        <Button
+            android:id="@+id/app_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="@string/button_weight"
+            android:text="@string/app_button_name"
+            android:textSize="@dimen/text_size"/>
+
+        <ImageButton
+            android:id="@+id/sms_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="@string/button_weight"
+            android:src="@android:drawable/sym_action_email"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
