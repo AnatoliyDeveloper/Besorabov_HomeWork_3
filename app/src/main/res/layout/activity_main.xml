@@ -8,15 +8,16 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <GridLayout
-        android:id="@+id/GridLayout"
+    <android.support.v7.widget.GridLayout
+        xmlns:grid="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/grid_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/line"
-        android:columnCount="3"
-        android:rowCount="4"
-        android:background="@android:color/darker_gray">
-
+        android:background="@android:color/darker_gray"
+        grid:columnCount="3"
+        grid:rowCount="4">
+        
         <Button
             style="@style/DataButton"
             android:text="@string/button_text"/>
@@ -65,7 +66,7 @@
             style="@style/DataButton"
             android:text="@string/button_text"/>
 
-    </GridLayout>
+    </android.support.v7.widget.GridLayout>
 
     <LinearLayout
         android:id="@+id/line"
